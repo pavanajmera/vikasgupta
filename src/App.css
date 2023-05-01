@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1F2039;
+  /* background-color: #A5B4FC; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  padding: 80px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  width: 65%;
+  margin: auto;
+}
+
+div {
+  /* margin-right: 40px; */
+  padding-top: 0;
+}
+
+h1 {
+  color: #A5B4FC;
+  font-size: 3em;
+  padding-bottom: 25px;
+}
+
+p {
+  /* color: white; */
+  /* font-size: 1.3em; */
+  /* margin-bottom: 70px; */
+}
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cta {
+  color: white;
+  background: linear-gradient(#8E86B5, #ACAEED);
+  padding: 20px 30px;
+  font-size: 17px;
+  border-radius: 50px;
+}
+
+.cta:hover {
+  text-decoration: none;
+  background: linear-gradient(#696484, #8788BA);
+}
+
+.hero img{
+  max-width: 280px;
+  width: 28vw;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+  /* media queries */
+@media screen and (max-width: 996px) {
+  
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    padding: 10px;
+    width: 85%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero img {
+    order: 1;
+    margin-bottom: 40px;
+    max-width: 280px;
+    /* width: 28vw; */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    padding: 13px
   }
+
+  .hero div {
+    order: 2;
+    height: auto;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .home p {
+    padding: 0 50px 0 50px;
+    margin-bottom: 50px;
+  }
+  }
+
+  @media screen and (max-width: 470px) {
+    .hero h1 {
+      font-size: 2em;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+  }
+
+/*? Experience CSS  */
+
+.container{
+  max-width: 1300px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 20px;
+}
+.container1{
+  max-width: 1300px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 20px; */
+}
+
+.card{
+  background-color: #fff;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+  /* padding-top: 200px; */
+}
+
+.card:hover{
+  /* background-color: grey; */
+ box-shadow: 10px red;
+}
+/* .card img{
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
+  position: absolute;
+  top: -50px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.card-body{
+  padding: 20px;
+}
+
+.tech-skills{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 20px;
+}
+
+.tech-skills img{
+  width: 100%;
+}
+
+.card-body .card-title{
+  font-size: 24px;
+  /* font-weight: 500; */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-body .card-text{
+  font-size: 25px;
+  /* line-height: 1.8; */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-body .btn{
+  width: 100%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(185, 186, 255, 0.38);
+  color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.card-body .btn:hover{
+  background-color: blue;
+  color: #fff;
+}
+
+@media screen and (max-width:768px) {
+  .container{
+      grid-template-columns: 1fr;
+      grid-row-gap: 100px;
+  }
+
+
+}
+
+/* 
+  Experience 
+*/
+.job-company {
+  text-transform: uppercase;
+  color: #334155;
+  background: #cbd5e1;;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  margin: 0.75rem 0;
+}
+
+.job-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.job-icon{
+  color: aqua;
+  font-size: 25px;
+  animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%, 50%, 100% { transform: scale(1, 1); }
+  30%, 80% { transform: scale(0.92, 0.95); }
 }
