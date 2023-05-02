@@ -66,3 +66,22 @@ export const skillsData = [
     },
 
 ]
+
+export const projectDetails = [
+    {
+        id: 1,
+        projectName: "Bank Management System",
+        image: '',
+        link: 'google.com',
+        demo: 'link',
+        technologies: 'Python and MySQL'
+    },
+    {
+        id: 2,
+        projectName: "Plant Leaf Diseases Prediction",
+        image: '',
+        link: 'google.com',
+        demo: 'link',
+        technologies: 'Python, Deep Learning Algorithms CNN, Python Flask Framework'
+    }
+]

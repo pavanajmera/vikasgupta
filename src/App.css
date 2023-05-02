@@ -20,7 +20,7 @@ div {
 h1 {
   color: #A5B4FC;
   font-size: 3em;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
 }
 
 p {
@@ -222,16 +222,140 @@ a:hover {
   grid-template-columns: auto 1fr;
   column-gap: 2rem;
   align-items: center;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
+  font-size: 18px;
 }
 
 .job-icon{
   color: aqua;
-  font-size: 25px;
-  animation: 1.5s ease 0s infinite beat;
+  font-size: 30px;
+  animation: 1.5s ease 1s infinite beat;
 }
 
 @keyframes beat {
   0%, 50%, 100% { transform: scale(1, 1); }
   30%, 80% { transform: scale(0.92, 0.95); }
 }
+
+.projects{
+  padding: 1rem 0px;
+  /* background: darkcyan; */
+}
+.title{
+  text-align: center;
+  /* margin-bottom: 3rem; */
+  color:aqua;
+  font-size: 20px;
+}
+
+.underline{
+  height: 0.2rem;
+  width: 10rem;
+  background: greenyellow;
+  margin: -1rem auto 0px;
+}
+
+.section-center{
+  width: 90vw;
+  max-width: 1300px;
+  margin: 0px auto 2rem;
+  display: grid;
+  gap: 3rem 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+
+.img-container{
+  position: relative;
+  height: 15rem;
+}
+
+.img-container span{
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.img-container img{
+  position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius:  0.25rem;
+}
+
+.card1 {
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+  overflow: hidden;
+  background: white;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+
+.card1 img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card1:hover{
+  transform: scale(1.05);
+  
+}
+button:hover {
+  background-color: #555;
+}
+
