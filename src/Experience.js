@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Job } from "./data";
-import { FaAngleDoubleRight } from 'react-icons/fa';
+import { FaAngleDoubleRight, FaCalendar } from 'react-icons/fa';
 const Experience = () => {
     const [jobs, setJob] = useState(Job)
-    // console.log(job);
     return(
         <>
             <h1 style={{color: 'white', textAlign: 'center'}}>Experience</h1>
@@ -14,7 +13,7 @@ const Experience = () => {
                         <article key={id} style={{color: 'white'}}>
                             <h3 style={{fontSize: '1.953rem'}}>{title}</h3>
                             <span className="job-company" >{company}</span>
-                            <p className="job-date">{dates}</p>
+                            <p className="job-date"> <FaCalendar></FaCalendar> {dates}</p>
                             {duties.map((duty, index)=>{
                                 return(
                                   <div key={index}>

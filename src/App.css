@@ -237,6 +237,14 @@ a:hover {
   30%, 80% { transform: scale(0.92, 0.95); }
 }
 
+
+.job-date{
+  font-size: 20px;
+  /* font-weight: bold; */
+  font-style: italic;
+}
+
+
 .projects{
   padding: 1rem 0px;
   /* background: darkcyan; */
@@ -262,6 +270,7 @@ a:hover {
   display: grid;
   gap: 3rem 2rem;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  padding: 20px;
 }
 
 .img-container{

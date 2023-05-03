@@ -46,14 +46,7 @@ const Projects = () => {
             </div>
          </div>
         </div>
-        {/* <div className="card1">
-          <img src="https://picsum.photos/400/300" alt=""/>
-          <div className="card-content">
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non purus risus. Aliquam erat volutpat.</p>
-            <button>Learn More</button>
-          </div>
-        </div> */}
+        
       </section>
     </>
   );
